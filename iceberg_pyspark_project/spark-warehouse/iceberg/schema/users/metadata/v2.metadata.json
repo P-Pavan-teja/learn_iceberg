@@ -1,0 +1,82 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "f9a814db-0441-4107-bf58-72d83efeeef4",
+  "location" : "spark-warehouse/iceberg/schema/users",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1779752771622,
+  "last-column-id" : 3,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "age",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "codespace",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4716764787829332554,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4716764787829332554,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 4716764787829332554,
+    "timestamp-ms" : 1779752771622,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1779752721324",
+      "added-data-files" : "2",
+      "added-records" : "3",
+      "added-files-size" : "1679",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "1679",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "spark-warehouse/iceberg/schema/users/metadata/snap-4716764787829332554-1-496d88ef-d5f7-4de4-abd3-7036009d5bba.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1779752771622,
+    "snapshot-id" : 4716764787829332554
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1779752763929,
+    "metadata-file" : "spark-warehouse/iceberg/schema/users/metadata/v1.metadata.json"
+  } ]
+}
